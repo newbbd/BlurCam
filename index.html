@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlurCam</title>
+    <meta
+      name="description"
+      content="BlurCam is a lightweight browser camera privacy tool with blur, pixelation, mirror, and freeze modes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">Browser camera privacy tool</p>
+        <h1>BlurCam</h1>
+        <p class="hero-text">
+          A lightweight webcam preview tool with blur, pixelation, mirror, and freeze controls.
+          Everything runs locally in your browser.
+        </p>
+      </section>
+
+      <section class="camera-card" aria-label="Camera preview">
+        <div class="preview-wrap">
+          <video id="camera" autoplay playsinline muted></video>
+          <canvas id="pixel-canvas" aria-hidden="true"></canvas>
+          <div id="empty-state" class="empty-state">
+            <p>Camera is off</p>
+            <span>Press Start Camera to begin.</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start-btn" type="button">Start Camera</button>
+          <button id="stop-btn" type="button" class="secondary">Stop</button>
+          <button id="blur-btn" type="button" class="secondary">Blur</button>
+          <button id="pixel-btn" type="button" class="secondary">Pixelate</button>
+          <button id="mirror-btn" type="button" class="secondary">Mirror</button>
+          <button id="freeze-btn" type="button" class="secondary">Freeze</button>
+        </div>
+
+        <p id="status" class="status">Ready.</p>
+      </section>
+
+      <section class="notes">
+        <h2>What it does</h2>
+        <ul>
+          <li>Uses your browser camera permission directly.</li>
+          <li>Does not upload video anywhere.</li>
+          <li>Lets you quickly blur, pixelate, mirror, or freeze the preview.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
