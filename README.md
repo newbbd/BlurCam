@@ -1,36 +1,44 @@
 # BlurCam
 
-A planned browser-based camera privacy tool focused on simple webcam blur and visual privacy effects.
+A lightweight browser-based camera privacy tool with blur, pixelation, mirror, and freeze controls.
 
-## Goal
+## Live Demo
 
-BlurCam is intended to be a lightweight web experiment for applying privacy-focused effects to a webcam preview.
+GitHub Pages URL:
+[https://newbbd.github.io/BlurCam/](https://newbbd.github.io/BlurCam/)
 
-## Planned Features
+## Features
 
 - Live webcam preview
-- Background blur mode
+- Blur mode
 - Pixelation mode
-- Simple privacy toggle
-- Clean browser-based UI
-- No required account or backend
+- Mirror toggle
+- Freeze toggle
+- Mobile-friendly interface
+- No account, backend, or upload step
+
+## Privacy
+
+BlurCam runs directly in the browser using the MediaDevices API. The webcam stream is used locally in the page and is not uploaded by this project.
 
 ## Tech Stack
 
-Planned stack:
-
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
+- Vanilla JavaScript
 - Browser MediaDevices API
+- Canvas API
+
+## Project Structure
+
+- `index.html`: App layout and controls
+- `styles.css`: Responsive interface and visual design
+- `script.js`: Camera permissions, blur, pixelation, mirror, and freeze logic
+
+## Why I Built This
+
+I built BlurCam as a small practical web experiment around browser APIs, camera permissions, and privacy-focused UI tools.
 
 ## Status
 
-Work in progress. This repository is currently a project placeholder and will be updated as the tool is built.
-
-## Next Steps
-
-- Build the first static UI
-- Add camera permission handling
-- Add blur and pixelation effects
-- Add a screenshot and live demo link
+Functional prototype. Planned improvements include screenshots, better mobile testing, stronger error states, and more camera effects.
